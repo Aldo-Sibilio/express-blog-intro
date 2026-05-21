@@ -4,6 +4,9 @@ import express, { request, response } from "express"
 // creo l'applicazione Express
 const app = express();
 
+// configuriamo la cartella public per gli asset statici
+app.use(express.static('public'));
+
 // definisco la porta del server
 const port = 3000;
 
